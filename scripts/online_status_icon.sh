@@ -21,7 +21,7 @@ offline_icon_osx="❌"
 # offline_icon_osx="⛔️"
 offline_icon_cygwin="X"
 # offline_icon="❌"
-offline_icon="x"
+offline_icon="✖"
 ping_timeout_default="3"
 route_to_ping_default="www.qq.com"
 
