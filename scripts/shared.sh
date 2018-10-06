@@ -9,6 +9,7 @@ get_tmux_option() {
 	local default_value=$2
 	local force_icon=$3
 	if [[ $force_icon == "force" ]]; then
+		local option_value=$(tmux show-option -gqv "$option")
 		if [[ $option_value != $default_value ]]; then
 			set_tmux_option "$option" "$default_value"
 			# set_tmux_option "$option" "xx"
